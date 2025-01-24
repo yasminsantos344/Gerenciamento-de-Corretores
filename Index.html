@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=priority_high" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste Prático de Programação</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Cadastro de Corretor</h1>
+        <form action="" method="get" id="form">
+
+            <input type="number" name="id_corretores" id="id" class="id" placeholder="Digite o ID do corretor">
+
+            <span id="spamCpf"></span><span id="spamCreci"></span><br>
+            <input type="text" placeholder="Digite seu CPF" class="cpf" name="cpf_corretores" id="cpf">
+
+            
+            <input type="number" placeholder="Digite seu Creci" class="creci" name="creci_corretores" id="creci"><br>
+
+            <span id="spamNome"></span><br>
+            <input type="text" placeholder="Digite seu nome" class="nome" name="nome_corretores" id="nome"><br>
+
+            <input type="button"  name="Enviar" id="Enviar" class="Enviar" value="Enviar" onclick="Cadastro()">
+            <input type="button" value="Salvar" id="Salvar" class="Salvar" name="Salvar" onclick="Atualizar()">
+            <input type="button" value="Excluir" id="Excluir" class="Excluir" name="Excluir" onclick="FExcluir()">
+        </form><br>
+
+
+        <div class="resultado" id="resultado"></div>
+
+        <h1>Tabela de Corretores</h1>
+        <div class="exibicao" id="exibicao">
+            
+        </div>
+
+    </section >   
+</body>
+<script src="Js.js"></script>
+</html>

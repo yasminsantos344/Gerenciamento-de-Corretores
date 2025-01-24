@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --lighGrey: #afafaf;
+    --darkBlue: #003566;
+    --white: #ffffffec;
+    --transWhite: #ffffffc5;
+    --Red: #FF4136;
+    --darkRed:#C0392B;
+    --green: #01FF70;
+    --darkGreen: #20a156dc;
+    --Blue: #cca000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "DM Sans", serif;
+    font-weight: 700;
+    background: rgb(114,9,183);
+    background: radial-gradient(circle, rgba(114,9,183,1) 0%, rgba(63,55,201,1) 100%);
+}
+
+.container{
+    -webkit-box-shadow: 11px 10px 26px 5px rgba(235, 235, 235, 0.76);
+    -moz-box-shadow: 11px 10px 26px 5px rgba(235, 235, 235, 0.76);
+    box-shadow: 11px 10px 26px 5px rgba(235, 235, 235, 0.76);
+    width: 50%;
+    padding: 0 5rem;
+    
+}
+
+.container h1{
+    text-align: center;
+    margin: 0 0 1rem ;
+    color: var(--white);
+}
+
+form{
+    
+    padding: 1rem;
+}
+
+form input{
+    border: var(--lighGrey) 1px solid ;
+    margin: 0 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--transWhite);
+}
+
+form input::placeholder{
+    font-weight: 700;
+}
+
+form #cpf{
+    width: 35%;
+    margin: 0 0.5rem 0 0;
+}
+
+form #creci{
+    width: 61.6%;
+}
+
+form input[type="text"], [type="button"]{
+    width: 100%;
+    
+}
+
+form input[type="button"]{
+    background-color: var(--transWhite);
+    color: var(--darkBlue);
+    padding: 0.3rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.id{
+    display: none;
+}
+
+.Salvar{
+    display: none;
+}
+
+.Excluir{
+    display: none;
+}
+
+.cpf.desativado{
+    display: none;
+}
+
+.creci.desativado{
+    display: none;
+}
+
+.Enviar.desativado{
+    display: none;
+}
+
+.nome.desativado{
+    display:none;
+}
+
+.Excluir.ativo{
+    display:block;
+}
+
+.Salvar.ativo{
+    display: block;
+}
+
+.id.ativo{
+    display: block;
+}
+
+span{
+    color: var(--darkRed);
+}
+
+#spamCreci{
+    position: relative;
+    left: 30%;
+}
+
+.resultado{
+    display: none;
+}
+
+.resultado.ativop{
+    display: block;
+    background-color: var(--darkGreen);
+    border-radius: 5px;
+    color: var(--white);
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.resultado.ativon{
+    display: block;
+    background-color: var(--red);
+    border-radius: 5px;
+    color: var(--white);
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.Dados{
+
+    height: 50vh;
+    width: 60%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.98);
+}
+
+.exibicao{
+    height: 30%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--white);
+    text-align: left;
+    overflow-x:hidden;
+    overflow-y:visible;
+}
+
+.tabela{
+    margin-bottom: 1rem;
+    border-bottom: 1px var(--transWhite) solid;
+    text-align: center;
+}
+
+.tabela input[type="button"]{
+    width: 50%;
+    background-color: var(--transWhite);
+    color: var(--darkBlue);
+    font-weight: 700;
+    padding: 0.3rem;
+    border: none;
+    margin: 0.2rem 0;
+    border-radius: 5px;
+}.tabela input[type="button"]:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
