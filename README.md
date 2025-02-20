@@ -57,7 +57,7 @@ Este projeto foi desenvolvido para um processo seletivo e serve como uma demonst
 
 ## 📷 Demonstração
 
-![Demonstração do CRUD](https://via.placeholder.com/800x400.png?text=CRUD+PHP+MySQL+JQuery)
+![Demonstração do CRUD](https://github.com/user-attachments/assets/87c8b625-a8e6-4fd4-987f-751e55c43d2d)
 
 ## 🤝 Contribuição
 Fique à vontade para abrir _issues_ e enviar _pull requests_ para melhorias!
